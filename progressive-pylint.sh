@@ -10,7 +10,7 @@ for (( i=0; i<${#names[@]}; i++ )); do
   # If there were issues, show them and stop.
   if [ $? -ne 0 ]; then
     echo "$log"
-    return $status
+    exit $status
   fi
 done
 
